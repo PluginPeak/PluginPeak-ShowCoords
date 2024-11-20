@@ -1,0 +1,9 @@
+command showCoords() {
+    permission = "coords.view";
+    execute() {
+        player.message("Coordinates: X={0}, Y={1}, Z={2}".format(player.position.x, player.position.y, player.position.z));
+        player.message("Heading: {0}".format(player.rotation));
+        logger.log("Player Coordinates: X={0}, Y={1}, Z={2}".format(player.position.x, player.position.y, player.position.z));
+        logger.log("Player Heading: {0}".format(player.rotation));
+    }
+}
